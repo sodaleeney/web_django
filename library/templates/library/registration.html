@@ -1,0 +1,16 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{%trans "Регистрация" %}</title>
+</head>
+<body>
+    <h2>{%trans "Регистрация" %}</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">{%trans "Зарегистрироваться" %}</button>
+    </form>
+    <p>{%trans "Уже есть аккаунт? " %}<a href="{% url 'login' %}">{%trans "Войти" %}</a></p>
+</body>
+</html>

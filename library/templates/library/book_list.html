@@ -1,0 +1,27 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% trans "Список книг" %}</title>
+</head>
+<body>
+    <h2>{% trans "Список книг" %}</h2>
+    <p>{% trans "Привет," %} {{ user.username }}! <a href="{% url 'logout' %}">{% trans "Выйти" %}</a></p>
+    <p><a href="{% url 'add_book' %}">{% trans "Добавить книгу" %}</a></p>
+    <form method="post">
+        {% csrf_token %}
+        <ul>
+            {% for book in books %}
+            <li>
+                <label>
+                    <input type="checkbox" name="book_id" value="{{ book.id }}"
+                        {% if book in user_books %}checked{% endif %}
+                        onchange="this.form.submit()">
+                    {{ book.title }} — {{ book.author }}
+                </label>
+            </li>
+            {% endfor %}
+        </ul>
+    </form>
+</body>
+</html>

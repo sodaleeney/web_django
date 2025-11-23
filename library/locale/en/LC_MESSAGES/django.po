@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-24 01:19+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\library\templates\library\add_book.html:6
+#: .\library\templates\library\add_book.html:10
+#: .\library\templates\library\book_list.html:10
+msgid "Добавить книгу"
+msgstr "Add book"
+
+#: .\library\templates\library\add_book.html:14
+msgid "Добавить"
+msgstr "Add"
+
+#: .\library\templates\library\add_book.html:16
+msgid "К списку книг"
+msgstr "To book list"
+
+#: .\library\templates\library\book_list.html:5
+#: .\library\templates\library\book_list.html:8
+msgid "Список книг"
+msgstr "Book list"
+
+#: .\library\templates\library\book_list.html:9
+msgid "Привет,"
+msgstr "Hello,"
+
+#: .\library\templates\library\book_list.html:9
+msgid "Выйти"
+msgstr "Logout"
+
+#: .\library\templates\library\login.html:5
+#: .\library\templates\library\login.html:8
+msgid "Вход"
+msgstr "Login"
+
+#: .\library\templates\library\login.html:12
+#: .\library\templates\library\registration.html:13
+msgid "Войти"
+msgstr "Login"
+
+#: .\library\templates\library\login.html:14
+msgid "Нет аккаунта? "
+msgstr "No account? "
+
+#: .\library\templates\library\login.html:14
+#: .\library\templates\library\registration.html:11
+msgid "Зарегистрироваться"
+msgstr "Register"
+
+#: .\library\templates\library\registration.html:4
+#: .\library\templates\library\registration.html:7
+msgid "Регистрация"
+msgstr "Registration"
+
+#: .\library\templates\library\registration.html:13
+msgid "Уже есть аккаунт? "
+msgstr "Already have an account? "
