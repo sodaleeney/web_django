@@ -86,6 +86,7 @@ def add_book(request):
 
             if Book.objects.filter(title=title, author=author).exists():
                 form.add_error(None, 'Книга с таким названием и автором уже существует.')
+                return render(request, 'library/add_book.html', {'form': form})
             else:
                 book = form.save()
                 book.readers.add(request.user)
@@ -93,6 +94,7 @@ def add_book(request):
     else:
         form = BookForm()
     return render(request, 'library/add_book.html', {'form': form})
+
 
 
 @login_required
